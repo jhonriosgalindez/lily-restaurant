@@ -8,12 +8,6 @@ import Image from 'next/image'
 import menuIcon from '../../../public/assets/icons/bx-menu.svg'
 import xIcon from '../../../public/assets/icons/bx-x.svg'
 
-// const Scroll = dynamic(
-//   () => {
-//     return import("../components/Scroll");
-//   },
-//   { ssr: false }
-// );
 
 const Header = () => {
 
@@ -23,17 +17,6 @@ const Header = () => {
     setShowMenu(!showMenu)
   }
 
-  // const [changeColorNavbar, setChangeColorNavbar] = React.useState(false)
-
-  // const changeBgNavbar = () => {
-  //     if (window.scrollY >= 90) {
-  //       setChangeColorNavbar(true)
-  //     } else {
-  //       setChangeColorNavbar(false)
-  //     }
-  // }
-
-  // window.addEventListener('scroll', changeBgNavbar)
 
   return (
     <div id='home'>

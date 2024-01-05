@@ -18,10 +18,12 @@ const HeaderSlider = () => {
   const [changeColorNavbar, setChangeColorNavbar] = React.useState(false)
 
   const changeBgNavbar = () => {
-    if (window.scrollY >= 550) {
-      setChangeColorNavbar(true)
-    } else {
-      setChangeColorNavbar(false)
+    if (typeof window !== "undefined") {
+      if (window.scrollY >= 550) {
+        setChangeColorNavbar(true)
+      } else {
+        setChangeColorNavbar(false)
+      }
     }
   }
 
