@@ -26,7 +26,7 @@ const HeaderSlider = () => {
       }
     }
   }
-
+  
   window.addEventListener('scroll', changeBgNavbar)
 
   return (
