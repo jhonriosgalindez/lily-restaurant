@@ -4,6 +4,8 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
+import Scroll from './Scroll'
+
 import menuIcon from '../../../public/assets/icons/bx-menu.svg'
 import xIcon from '../../../public/assets/icons/bx-x.svg'
 
@@ -15,19 +17,19 @@ const Header = () => {
     setShowMenu(!showMenu)
   }
 
-  const [changeColorNavbar, setChangeColorNavbar] = React.useState(false)
+  // const [changeColorNavbar, setChangeColorNavbar] = React.useState(false)
 
-  const changeBgNavbar = () => {
-    if (typeof window !== undefined) {
-      if (window.scrollY >= 90) {
-        setChangeColorNavbar(true)
-      } else {
-        setChangeColorNavbar(false)
-      }
-    }
-  }
+  // const changeBgNavbar = () => {
+  //   if (typeof window !== "undefined") {
+  //     if (window.scrollY >= 90) {
+  //       setChangeColorNavbar(true)
+  //     } else {
+  //       setChangeColorNavbar(false)
+  //     }
+  //   }
+  // }
 
-  window.addEventListener('scroll', changeBgNavbar)
+  // window.addEventListener('scroll', changeBgNavbar)
 
   return (
     <div id='home'>
