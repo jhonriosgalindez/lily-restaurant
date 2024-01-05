@@ -2,26 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --color-primary: #fbf8f2;
+    --color-secundary: #ffffff;
+    --color-text: #160e24;
+    --color-button: rgb(233, 223, 217, .9);
+    --color-hover: #dcdee9;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  .section {
+    @apply py-[100px] w-full h-auto;
+  }
+  .card {
+    @apply relative w-full h-[300px] bg-center bg-cover transition-transform duration-500 hover:scale-90 [&>h3]:hover:bg-[var(--color-text)] [&>h3]:hover:text-[var(--color-button)];
+  }
+  .title {
+    @apply text-xl text-center font-semibold capitalize text-[var(--color-text)];
+  }
+  .title-card {
+    @apply pb-4 text-xl text-center font-semibold capitalize text-[var(--color-text)];
+  }
+  .subtitle {
+    @apply ml-[125px] text-sm text-center font-normal text-[var(--color-text)];
+  }
+  .text-span {
+    @apply text-sm font-light text-[var(--color-text)];
+  }
+  h3 {
+    @apply py-2 px-4 w-full text-center font-semibold text-lg bg-[var(--color-button)] capitalize text-[var(--color-text)] md:w-[150px];
+  }
+}
+
+@layer components {
+  .card-text {
+    @apply p-8;
+  }
+  .slides {
+    @apply py-2 px-4 font-charm text-3xl text-center capitalize font-semibold;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-primary);
+}
+
+.active {
+  background-color: var(--color-text);
+}
+
+.navbar {
+  background-color: transparent;
 }
