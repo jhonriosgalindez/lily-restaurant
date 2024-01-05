@@ -16,7 +16,6 @@ import formImage from '../../public/assets/images/find-a-table.jpg'
 
 
 const copyright = new Date();
-
 const update = copyright.getFullYear();
 
 export default function Home() {

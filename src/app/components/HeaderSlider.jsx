@@ -27,7 +27,9 @@ const HeaderSlider = () => {
     }
   }
   
-  window.addEventListener('scroll', changeBgNavbar)
+  if (typeof window !== "undefined") {
+    window.addEventListener('scroll', changeBgNavbar)
+  }
 
   return (
     <div id='home'>
