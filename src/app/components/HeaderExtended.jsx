@@ -10,33 +10,33 @@ import menuIcon from '../../../public/assets/icons/bx-menu.svg'
 import xIcon from '../../../public/assets/icons/bx-x.svg'
 import arrowIcon from '../../../public/assets/icons/bxs-down-arrow.svg'
 
-// const HeaderExtended = () => {
+const HeaderExtended = () => {
 
-//   const [showMenu, setShowMenu] = React.useState(false)
+  const [showMenu, setShowMenu] = React.useState(false)
 
-//   const handleMenu = () => {
-//     setShowMenu(!showMenu)
-//   }
+  const handleMenu = () => {
+    setShowMenu(!showMenu)
+  }
 
-//   const [subMenu, setSubMenu] = React.useState(true)
+  const [subMenu, setSubMenu] = React.useState(true)
 
-//   const handleSubMenu = () => {
-//     setSubMenu(!subMenu)
-//   }
+  const handleSubMenu = () => {
+    setSubMenu(!subMenu)
+  }
   
-//   const [changeColorNavbar, setChangeColorNavbar] = React.useState(false)
+  const [changeColorNavbar, setChangeColorNavbar] = React.useState(false)
 
-//   const changeBgNavbar = () => {
-//     if (typeof window !== "undefined") {
-//       if (window.scrollY >= 550) {
-//         setChangeColorNavbar(true)
-//       } else {
-//         setChangeColorNavbar(false)
-//       }
-//     }
-//   }
+  const changeBgNavbar = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY >= 550) {
+        setChangeColorNavbar(true)
+      } else {
+        setChangeColorNavbar(false)
+      }
+    }
+  }
 
-//   window.addEventListener('scroll', changeBgNavbar)
+  window.addEventListener('scroll', changeBgNavbar)
 
 //   return (
 //     <>

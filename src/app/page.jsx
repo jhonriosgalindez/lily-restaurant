@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'react'
+import { React, Suspense, lazy } from 'react'
 import useIntersection from './components/useIntersection'
 
 import Image from 'next/image'
@@ -31,26 +31,28 @@ export default function Home() {
       </header>
 
       <main>
-        <Menu />
-        <Organization />
-        <Carousel />
+        <Suspense fallback={<h1>Cargando...</h1>}><Menu /></Suspense>
+        <Suspense fallback={null}><Organization /></Suspense>
+        <Suspense fallback={null}><Carousel /></Suspense>
         <div id='contact' className='flex flex-col items-center justify-center max-w-[90%] my-[100px] mx-auto w-full h-[500px] overflow-hidden md:flex-row xl:max-w-[1280px]'>
           <div className='md:w-1/2'>
-            <ContactForm />
+            <Suspense fallback={null}><ContactForm /></Suspense>
           </div>
           <div className='relative h-[500px] md:w-1/2 max-md:hidden'>
-            <Image 
-              src={formImage}
-              alt='reserve image'
-              fill
-              objectFit='cover'
-            />
+            <Suspense fallback={null}>
+              <Image 
+                src={formImage}
+                alt='reserve image'
+                fill
+                objectFit='cover'
+              />
+            </Suspense>
           </div>
         </div>
       </main>
 
       <footer className='section bg-[#e9dfd940]'>
-        <Footer />
+        <Suspense fallback={null}><Footer /></Suspense>
       </footer>
 
       <div className='text-span py-2 max-w-[90%] mx-auto max-md:flex max-md:flex-row max-md:gap-2 max-md:items-center md:flex justify-between md:gap-20 lg:max-w-[90%] lg:mx-auto xl:max-w-[1280px] capitalize'>
