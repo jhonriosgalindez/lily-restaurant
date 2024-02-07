@@ -16,7 +16,7 @@ const Organization = () => {
           <div className='pt-12 flex flex-wrap gap-8'>
             <article className='w-full md:flex md:flex-wrap'>
               <div className='card-text bg-white md:w-1/2 md:flex md:flex-col md:items-center md:justify-center md:px-20'>
-                <h4 id='banquets' className='title-card'>banquets</h4>
+                <h3 id='banquets' className='title-card'>banquets</h3>
                 <p className='text-span md:text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi in, laborum nihil voluptatibus ipsum perferendis assumenda nemo enim? Culpa, omnis voluptate.</p>
                 <p className='text-span mt-10 underline decoration-dashed underline-offset-8'>Fill out the form</p>
               </div>
@@ -31,7 +31,7 @@ const Organization = () => {
             </article>
             <article className='w-full md:flex md:flex-wrap  md:flex-row-reverse'>
               <div className='card-text bg-white md:w-1/2 md:flex md:flex-col md:items-center md:justify-center md:px-20'>
-                <h4 id='companies' className='title-card'>for companies</h4>
+                <h3 id='companies' className='title-card'>for companies</h3>
                 <p className='text-span md:text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi in, laborum nihil voluptatibus ipsum perferendis assumenda nemo enim? Culpa, omnis voluptate.</p>
                 <p className='text-span mt-10 underline decoration-dashed underline-offset-8'>Fill out the form</p>
               </div>
@@ -46,7 +46,7 @@ const Organization = () => {
             </article>
             <article className='w-full md:flex md:flex-wrap'>
               <div className='card-text bg-white md:w-1/2 md:flex md:flex-col md:items-center md:justify-center md:px-20'>
-                <h4 id='catering' className='title-card'>catering</h4>
+                <h3 id='catering' className='title-card'>catering</h3>
                 <p className='text-span md:text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi in, laborum nihil voluptatibus ipsum perferendis assumenda nemo enim? Culpa, omnis voluptate.</p>
                 <p className='text-span mt-10 underline decoration-dashed underline-offset-8'>Fill out the form</p>
               </div>

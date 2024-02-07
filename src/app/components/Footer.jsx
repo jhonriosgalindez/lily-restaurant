@@ -30,9 +30,9 @@ const Footer = () => {
           <article className='pt-6'>
             <p className='normal-case'>lilycontact@lily.com</p>
             <div className='flex flex-wrap items-center justify-center'>
-              <Link href='https://web.facebook.com/' target='blank'><Image className='m-3' src={facebookIcon} width={30} /></Link>
-              <Link href='https://twitter.com/' target='blank'><Image className='m-3' src={twitterIcon} width={30} /></Link>
-              <Link href='https://www.youtube.com/' target='blank'><Image className='m-3' src={youtubeIcon} width={30} /></Link>
+              <Link href='https://web.facebook.com/' target='blank'><Image className='m-3' src={facebookIcon} width={30} alt='icon facebook' /></Link>
+              <Link href='https://twitter.com/' target='blank'><Image className='m-3' src={twitterIcon} width={30} alt='icon twitter' /></Link>
+              <Link href='https://www.youtube.com/' target='blank'><Image className='m-3' src={youtubeIcon} width={30} alt='icon youtube' /></Link>
             </div>
           </article>
         </section>

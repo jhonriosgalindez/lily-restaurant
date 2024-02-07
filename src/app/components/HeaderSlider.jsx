@@ -54,7 +54,7 @@ const HeaderSlider = () => {
           </div>
           <nav className={`absolute left-[-1000px] w-full h-screen transition-all delay-300 bg-white ${showMenu ? 'left-[0px]' : ''}`}>
             <ul className="fixed w-full h-screen bg-black">
-              <div className='flex justify-end p-6 cursor-pointer'>
+              <li className='flex justify-end p-6 cursor-pointer'>
                 <Image 
                   onClick={handleMenu}
                   src={xIcon} 
@@ -62,7 +62,7 @@ const HeaderSlider = () => {
                   height={40}
                   alt='close icon' 
                 />
-              </div>
+              </li>
               <li onClick={handleMenu} className='py-8 text-center text-base font-semibold uppercase text-[--color-primary]'><Link href="#home">Home</Link></li>
               <li onClick={handleMenu} className='py-8 text-center text-base font-semibold uppercase text-[--color-primary]'><Link href="#menu">Menu</Link></li>
               <li onClick={handleMenu} className='py-8 text-center text-base font-semibold uppercase text-[--color-primary]'><Link href="#organization">Organization</Link></li>
