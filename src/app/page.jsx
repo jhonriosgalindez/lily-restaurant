@@ -3,7 +3,7 @@
 import { React, Suspense, lazy } from 'react'
 import useIntersection from './components/useIntersection'
 
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Link from 'next/link'
 import HeaderSlider from './components/HeaderSlider'
 import Menu from './components/Menu'

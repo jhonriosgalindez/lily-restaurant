@@ -3,7 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import dynamic from "next/dynamic";
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 import menuIcon from '../../../public/assets/icons/bx-menu.svg'
 import xIcon from '../../../public/assets/icons/bx-x.svg'

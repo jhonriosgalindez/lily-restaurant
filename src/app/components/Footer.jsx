@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 import facebookIcon from '../../../public/assets/icons/bxl-facebook.svg'
 import twitterIcon from '../../../public/assets/icons/bxl-twitter.svg'

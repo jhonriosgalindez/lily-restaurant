@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 import banquetsImage from '../../../public/assets/images/organization-banquets.jpg'
 import companiesImage from '../../../public/assets/images/organization-companies.jpg'
@@ -23,7 +23,6 @@ const Organization = () => {
               <div className='relative h-[400px] md:w-1/2'>
                 <Image 
                   src={banquetsImage}
-                  fill
                   objectFit='cover'
                   alt='image banquets'
                 />
@@ -38,7 +37,6 @@ const Organization = () => {
               <div className='relative h-[400px] md:w-1/2'>
                 <Image 
                   src={companiesImage}
-                  fill
                   objectFit='cover'
                   alt='image banquets'
                 />
@@ -53,7 +51,6 @@ const Organization = () => {
               <div className='relative h-[400px] md:w-1/2'>
                 <Image 
                   src={cateringImage}
-                  fill
                   objectFit='cover'
                   alt='image banquets'
                 />
