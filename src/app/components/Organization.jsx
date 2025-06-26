@@ -12,6 +12,7 @@ const Organization = () => {
       <section id='organization' className='section'>
         <div className='mx-auto w-full max-w-[90%] xl:max-w-[1280px]'>
           <h2 className='title'>organization</h2>
+          <p className='subtitle'>Nuevo para eliminar</p>
           <p className='subtitle'>pleasant memories</p>
           <div className='pt-12 flex flex-wrap gap-8'>
             <article className='w-full md:flex md:flex-wrap'>
